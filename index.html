@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "p-BiENLmxiF1wjM2I",
+      });
+   })();
+</script>
+</head>
+<body>
+    <div class="container">
+        <label for="username">Username</label>
+        <input type="text" id="user-name" placeholder="Enter username" required>
+
+        <label for="Email">Email</label>
+        <input type="email" id="email_id" placeholder="Enter your email" required>
+
+        <label for="Password">Password</label>
+        <input type="password" id="user-password" placeholder="Enter your password" required>
+
+        <label for="conformpassword">Conform Password</label>
+        <input type="password" id="conform-password" placeholder="conform password">
+
+        <label for="otp">OTP</label>
+        <input type="text" id="otp" required placeholder="otp">
+
+        <button id="btn" onclick="sendotp();">Send OTP</button>
+
+        <BUtton id="btn2 " onclick="submit();">Submit</BUtton>
+
+        <button onClick="window.location.reload();">Refresh Page</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
